@@ -31,14 +31,14 @@ renderCompStyles = function(update = false) {
       .is-updating {
         display: inline-block;
         animation: updatePulse 1s forwards;
-        color: #BF360C;
+        color: #00E676;
       }
       @keyframes updatePulse {
         0% {
           transform: scale(0);
         }
         50% {
-          transform: scale(1.5);
+          transform: scale(1.25);
         }
         100% {
           transform: scale(1);
