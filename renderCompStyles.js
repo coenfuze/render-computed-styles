@@ -19,10 +19,9 @@ renderCompStyles = function(update = false) {
       .computedStyles {
         position: relative;
         z-index: 99;
-        background: black;
+        background: #263238;
         color:white;
         padding: 16px;
-        color: white;
         border-radius: 5px;
         display: inline-flex;
         flex-flow: column nowrap;
