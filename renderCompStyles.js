@@ -3,6 +3,7 @@ renderCompStyles = function(update = false) {
   
   // If not resizing
   if( ! update ) {
+    
     // Remove all previous localStorage instances of csElements
     Object.keys(localStorage).reduce(function(obj, str) { 
       obj[str] = localStorage.getItem(str); 
