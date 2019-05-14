@@ -21,6 +21,8 @@ renderCompStyles = function(update = false) {
         z-index: 99;
         background: #263238;
         color:white;
+        font-family: monospace;
+        font-size: 16px;
         padding: 16px;
         border-radius: 5px;
         display: inline-flex;
