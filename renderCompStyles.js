@@ -31,7 +31,7 @@ renderCompStyles = function(update = false) {
       .is-updating {
         display: inline-block;
         animation: updatePulse 1s forwards;
-        color: red;
+        color: #BF360C;
       }
       @keyframes updatePulse {
         0% {
