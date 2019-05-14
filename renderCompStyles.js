@@ -16,6 +16,8 @@ renderCompStyles = function(update = false) {
     stylesheet.type = 'text/css';
     var css = `
       .computedStyles {
+        position: relative;
+        z-index: 99;
         background: black;
         color:white;
         padding: 16px;
