@@ -5,12 +5,13 @@ renderCompStyles = function(update = false) {
   if( ! update ) {
     
     // Remove all previous localStorage instances of csElements
-    Object.keys(localStorage).reduce(function(obj, str) { 
-      obj[str] = localStorage.getItem(str); 
-      if( keys(obj)[0].indexOf('csElement-') > -1 ) {
-        window.localStorage.removeItem(str);
-      }
-    }, {});
+	let styleStorage = [];
+    for( let key in localStorage ) { 
+        if( key.indexOf('csElement') > -1 ) {
+            styleStorage.push(key);
+         }
+    }
+	(styleStorage.length ? window.localStorage.removeItem(styleStorage) : null)
 
     // Generate stylesheet
     var stylesheet = document.createElement('style');
