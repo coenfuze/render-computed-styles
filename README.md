@@ -1,2 +1,2 @@
 # renderComputedStyles
-JS function to render an element styles
+JS function to render element styles
